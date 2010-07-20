@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@color/background"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout
+		android:id="@+id/header"
+		android:layout_height="wrap_content"
+		android:padding="20px"
+		android:layout_width="fill_parent"
+		android:orientation="vertical">
+
+		<TextView
+			android:text="@string/app_name"
+			android:typeface="serif"
+			android:id="@+id/logo"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center"
+			android:layout_centerHorizontal="true"
+			android:textColor="@color/logo"
+			android:textSize="30sp"
+			android:layout_marginTop="20dip" />
+
+		<LinearLayout
+			android:id="@+id/search_bar"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+			<EditText
+				android:text="@string/search"
+				android:id="@+id/search"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<Button
+				android:text="Search"
+				android:id="@+id/search_button"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="right" />
+		</LinearLayout>
+
+	</LinearLayout>
+</LinearLayout>
